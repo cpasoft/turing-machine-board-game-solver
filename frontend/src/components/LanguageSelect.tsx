@@ -43,7 +43,7 @@ const availableCountries: Language[] = [
   {code: 'ua', language: 'Українська', tm: 'UA'},
 ];
 
-const LanguageSwitchNew: FC<Props> = (props) => {
+const LanguageSelect: FC<Props> = (props) => {
 
   function getCountry() {
     return availableCountries.find(c => c.tm === props.value);
@@ -73,7 +73,7 @@ const LanguageSwitchNew: FC<Props> = (props) => {
   );
 }
 
-export default LanguageSwitchNew;
+export default LanguageSelect;
 
 const Select = React.forwardRef(function CustomSelect(
   props: SelectProps<Language, false>,
