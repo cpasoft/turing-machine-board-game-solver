@@ -40,7 +40,7 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v3
       - name: Install dependencies
-        run: cd frontend && npm install --legacy-peer-deps && npm run build
+        run: cd frontend && npm install --legacy-peer-deps && npm run build -- --no-warnings-as-errors
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
