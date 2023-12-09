@@ -20,7 +20,6 @@ import useMediaQuery from "@mui/material/useMediaQuery";
 import { useAppDispatch } from "hooks/useAppDispatch";
 import { useAppSelector } from "hooks/useAppSelector";
 import { usePaletteMode } from "hooks/usePaletteMode";
-// import { FC, useEffect, useState } from "react";
 import { FC, useState } from "react";
 import { useUpdateEffect } from "react-use";
 import { savesActions } from "store/slices/savesSlice";
@@ -29,7 +28,6 @@ import DigitCode from "./DigitCode";
 import Registration from "./Registration";
 import Rounds from "./Rounds";
 import Saves from "./Saves";
-// import { checkDeductions, getPossibleCodes } from "deductions";
 import { checkDeductions } from "deductions";
 import LanguageSelect from "components/LanguageSelect";
 import { NewButton } from "components/NewButton";
@@ -197,7 +195,7 @@ const Root: FC = () => {
             </IconButton>
             <IconButton
               aria-label="github"
-              href="https://github.com/cpasoft/turing-machine-board-game-solver"
+              href="https://github.com/alexander-zibert/turing-machine-board-game-solver"
               target="_blank"
             >
               <GitHubIcon />
